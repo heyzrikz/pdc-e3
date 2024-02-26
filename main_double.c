@@ -290,9 +290,7 @@ int main(int argc, char **argv) {
     }
     MPI_Barrier(MPI_COMM_WORLD);
     t1 = MPI_Wtime();
-    time_diff = t1
-
-                - t0;
+    time_diff = t1 - t0;
     MPI_Reduce(&time_diff, &time_tot, 1, MPI_DOUBLE, MPI_MAX, 0, MPI_COMM_WORLD);
     // ----------------------------------------------------- START RESULT  ----------------------------------------------------
 
