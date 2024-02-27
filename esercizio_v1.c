@@ -48,7 +48,6 @@ int main(int argc, char** argv) {
     int *ptr_matrix;
     /* *********************************************************** */
     MPI_Init(&argc, &argv);
-
     MPI_Comm_rank(MPI_COMM_WORLD, &curr_proc_id);
     MPI_Comm_size(MPI_COMM_WORLD, &total_procs);
 
